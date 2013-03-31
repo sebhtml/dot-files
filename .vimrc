@@ -1,4 +1,2 @@
-syntax on
-set autoindent
-set cindent
-set smarttab
+filetype plugin indent on
+
