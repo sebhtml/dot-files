@@ -9,8 +9,8 @@ inoremap {<CR> {<CR>}<Esc>O
 " tab is equivalent to CTRL+N
 " shift+tab => CTRL+P
 " \author Maxime Boisvert
-inoremap <expr> <Tab> strpart(getline('.'), col('.') - 2, 1) =~ '\w' ? "\<C-N>" : "\<Tab>"
-inoremap <expr> <S-Tab> strpart(getline('.'), col('.') - 2, 1) =~ '\w' ? "\<C-P>" : "\<Tab>"
+"inoremap <expr> <Tab> strpart(getline('.'), col('.') - 2, 1) =~ '\w' ? "\<C-N>" : "\<Tab>"
+"inoremap <expr> <S-Tab> strpart(getline('.'), col('.') - 2, 1) =~ '\w' ? "\<C-P>" : "\<Tab>"
 
 " hide the list of items
 " set completeopt=
