@@ -1,0 +1,22 @@
+
+export PATH=/opt/gydle/bin:$PATH
+
+export PS1="`hostname`$ "
+export EDITOR=emacsclient
+
+export PATH=/home/sboisvert/prototype_gydle_bionano/bin:$PATH
+export LD_LIBRARY_PATH=/home/sboisvert/prototype_gydle_bionano/lib:$LD_LIBRARY_PATH
+#export LIBRARY_PATH=$LD_LIBRARY_PATH
+
+export PATH=~/gydle-scripts/:$PATH
+ulimit -c unlimited
+
+### EXPORTED BY MOCAT ###
+#export PERL5LIB=$PERL5LIB:/home/sboisvert/mocat2-review/MOCAT/src
+#PATH=$PATH:/home/sboisvert/mocat2-review/MOCAT/src
+### EXPORTED BY MOCAT ###
+
+
+. /home/sboisvert/prototype_gydle_bionano/bash_completion.d/*
+
+export TERM=xterm-256color

@@ -33,7 +33,18 @@ values."
      ;;spell-checking
      ;;syntax-checking
      version-control
-     c-c++
+
+     ;;(setq-default c-default-style "bsd")
+     ;;(setq-default c-basic-offset 4)
+     ;;(setq-default tab-width 4)
+     (c-c++
+      :variables
+      c-c++-enable-clang-support t
+      c-c++-default-mode-for-headers 'c++-mode
+      c-default-style "bsd"
+      c-basic-offset 4
+      )
+
      themes-megapack
      mercurial
      )
@@ -242,10 +253,6 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
-  ; These 3 lines have no effects if they are located in dotspacemacs/user-config.
-  (setq-default c-default-style "bsd")
-  (setq-default c-basic-offset 4)
-  (setq-default tab-width 4)
   )
 
 (defun dotspacemacs/user-config ()
