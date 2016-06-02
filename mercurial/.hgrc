@@ -1,0 +1,23 @@
+[ui]
+username = Sébastien Boisvert <sboisvert@gydle.com>
+merge=internal:merge
+
+[pager]
+pager = LESS='FRX' less
+
+[extensions]
+color =
+pager =
+record = 
+hgext.hbisect=
+hgext.highlight=
+strip =
+
+[diff]
+showfunc = true
+
+[alias]
+blame = annotate --user --number
+
+[web]
+pygments_style = colorful
