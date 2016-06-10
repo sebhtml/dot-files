@@ -12,6 +12,8 @@ record =
 hgext.hbisect=
 hgext.highlight=
 strip =
+patchbomb =
+
 
 [diff]
 showfunc = true
@@ -21,3 +23,6 @@ blame = annotate --user --number
 
 [web]
 pygments_style = colorful
+
+%include ~/mercurial-email-config
+
