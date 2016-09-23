@@ -1,7 +1,6 @@
 
 export PATH=/opt/gydle/bin:$PATH
 
-export PS1="`hostname`$ "
 export EDITOR=emacsclient
 
 export PATH=/home/sboisvert/gydle-optical-aligner.build/apps:$PATH
@@ -9,7 +8,10 @@ export LD_LIBRARY_PATH=/home/sboisvert/gydle-optical-aligner/lib:$LD_LIBRARY_PAT
 #export LIBRARY_PATH=$LD_LIBRARY_PATH
 
 export PATH=~/gydle-scripts/:$PATH
+
 ulimit -c unlimited
+ulimit -m  8000000
+ulimit -v  8000000
 
 ### EXPORTED BY MOCAT ###
 #export PERL5LIB=$PERL5LIB:/home/sboisvert/mocat2-review/MOCAT/src
@@ -20,3 +22,7 @@ ulimit -c unlimited
 . /home/sboisvert/gydle-optical-aligner/bash_completion.d/*
 
 export TERM=xterm-256color
+
+export PS1="\[\e[31m\]\\$\[\e[m\] "
+
+
