@@ -3,8 +3,8 @@ export PATH=/opt/gydle/bin:$PATH
 
 export EDITOR=emacsclient
 
-export PATH=/home/sboisvert/gydle-optical-aligner.build/apps:$PATH
-export LD_LIBRARY_PATH=/home/sboisvert/gydle-optical-aligner/lib:$LD_LIBRARY_PATH
+export PATH=$HOME/gydle-optical-aligner.build/apps:$PATH
+export LD_LIBRARY_PATH=$HOME/gydle-optical-aligner/lib:$LD_LIBRARY_PATH
 #export LIBRARY_PATH=$LD_LIBRARY_PATH
 
 export PATH=~/gydle-scripts/:$PATH
@@ -14,15 +14,17 @@ ulimit -m  8000000
 ulimit -v  8000000
 
 ### EXPORTED BY MOCAT ###
-#export PERL5LIB=$PERL5LIB:/home/sboisvert/mocat2-review/MOCAT/src
-#PATH=$PATH:/home/sboisvert/mocat2-review/MOCAT/src
+#export PERL5LIB=$PERL5LIB:$HOME/mocat2-review/MOCAT/src
+#PATH=$PATH:$HOME/mocat2-review/MOCAT/src
 ### EXPORTED BY MOCAT ###
 
 
-. /home/sboisvert/gydle-optical-aligner/bash_completion.d/*
+. $HOME/gydle-optical-aligner/bash_completion.d/*
 
 export TERM=xterm-256color
 
 export PS1="\[\e[31m\]\\$\[\e[m\] "
 
+export EDITOR="emacsclient -c"
+export PATH=$HOME/software-builds/emacs/25.1/build/bin:$PATH
 
