@@ -3,15 +3,15 @@ export PATH=/opt/gydle/bin:$PATH
 
 export EDITOR=emacsclient
 
-export PATH=/home/sboisvert/gydle-optical-aligner.build/apps:$PATH
-export LD_LIBRARY_PATH=/home/sboisvert/gydle-optical-aligner/lib:$LD_LIBRARY_PATH
+export PATH=/home/sboisvert/gydle-optical-software-suite.build/apps:$PATH
+export LD_LIBRARY_PATH=/home/sboisvert/gydle-optical-software-suite/lib:$LD_LIBRARY_PATH
 #export LIBRARY_PATH=$LD_LIBRARY_PATH
 
 export PATH=~/gydle-scripts/:$PATH
 
 ulimit -c unlimited
-ulimit -m  8000000
-ulimit -v  8000000
+ulimit -m  16000000
+ulimit -v  16000000
 
 ### EXPORTED BY MOCAT ###
 #export PERL5LIB=$PERL5LIB:/home/sboisvert/mocat2-review/MOCAT/src
@@ -19,10 +19,13 @@ ulimit -v  8000000
 ### EXPORTED BY MOCAT ###
 
 
-. /home/sboisvert/gydle-optical-aligner/bash_completion.d/*
+. /home/sboisvert/gydle-optical-software-suite/bash_completion.d/*
 
 export TERM=xterm-256color
 
 export PS1="\[\e[31m\]\\$\[\e[m\] "
 
+export PATH=/home/sboisvert/emacs/25.1/build/bin:$PATH
+
+. ~/ssh-agent.txt &> /dev/null
 
